@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册/登录 - MVR设备租赁平台</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap" rel="stylesheet">
+  <style>body { font-family: 'SF Pro Display', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif; }</style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white rounded-2xl shadow-lg p-8 w-full max-w-sm">
+    <a href="index.html" class="text-blue-500 text-sm flex items-center mb-4"><i class="fa fa-chevron-left mr-1"></i>返回首页</a>
+    <div class="text-center mb-6">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=128&q=80" alt="logo" class="w-16 h-16 rounded-full mx-auto mb-2">
+      <h2 class="text-xl font-semibold">注册/登录</h2>
+    </div>
+    <form class="space-y-4">
+      <div>
+        <label class="block text-gray-600 mb-1">手机号</label>
+        <input type="tel" maxlength="11" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="请输入手机号" required>
+      </div>
+      <div class="flex items-center space-x-2">
+        <div class="flex-1">
+          <label class="block text-gray-600 mb-1">验证码</label>
+          <input type="text" maxlength="6" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="请输入验证码" required>
+        </div>
+        <button type="button" class="mt-6 px-3 py-2 bg-blue-100 text-blue-600 rounded-lg text-xs font-medium hover:bg-blue-200">发送验证码</button>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white rounded-lg py-2 font-semibold mt-2 hover:bg-blue-600 transition">登录/注册</button>
+    </form>
+    <div class="my-4 flex items-center justify-between">
+      <span class="border-b flex-1"></span>
+      <span class="mx-2 text-gray-400 text-xs">或</span>
+      <span class="border-b flex-1"></span>
+    </div>
+    <button class="w-full bg-green-500 text-white rounded-lg py-2 font-semibold flex items-center justify-center hover:bg-green-600 transition"><i class="fab fa-weixin mr-2"></i>微信一键登录</button>
+  </div>
+</body>
+</html> 
